@@ -7,7 +7,7 @@ import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
 import session from "express-session";
 
-const app = express()
+const app = express();
 app.use(express.json());
 app.use(
     cors({
