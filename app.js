@@ -6,18 +6,16 @@ import CourseRoutes from "./courses/routes.js";
 import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
 
-const app = express()
-app.use(cors());
-app.use(express.json());
-app.use(
-    cors({
-      credentials: true,
-      origin: process.env.FRONTEND_URL
-    }));  
+const app = express();
+app.use(cors({
+    credentials: true,
+    origin: process.env.FRONTEND_URL
+
+})); // allow react to connect to server. and only allow 3000 to be called. 
+app.use(express.json()); // this is json parsing so the body knows what is passing in.
 
 CourseRoutes(app);
 ModuleRoutes(app);
-
 
 
 Lab5(app)
