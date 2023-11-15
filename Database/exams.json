@@ -1,0 +1,6 @@
+[
+    { "_id": "E101", "title": "Propulsion Exam 1", "course": "RS101" },
+    { "_id": "E102", "title": "Combustion Analysis Exam", "course": "RS101" },
+    { "_id": "E103", "title": "Nozzle Design Project Exam", "course": "RS101" }
+
+]
