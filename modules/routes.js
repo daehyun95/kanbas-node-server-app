@@ -43,7 +43,7 @@ function ModuleRoutes(app) {
             ...Database.modules[index],
             ...req.body
         }
-        res.json(200);
+        res.json(204);
         });
 
     app.delete("/api/modules/:id", (req, res) => {

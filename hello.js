@@ -5,5 +5,8 @@ function HelloRoutes(app) {
     app.get("/hello", (req, res)=> {
         res.send("Life is good!");
     });
+    app.get("/", (req, res)=> {
+        res.send("First page of server!");
+    });
 }
 export default HelloRoutes;
