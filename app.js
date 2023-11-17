@@ -10,7 +10,7 @@ import AssignmentRoutes from "./assignments/routes.js";
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL
+    origin: "https://kanbas-node-server-app-cwch.onrender.com/"
 
 })); // allow react to connect to server. and only allow 3000 to be called. 
 app.use(express.json()); // this is json parsing so the body knows what is passing in.
