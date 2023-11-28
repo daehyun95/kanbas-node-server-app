@@ -18,15 +18,20 @@ app.use(
       origin: "http://localhost:3000",
     })
    );
-   
+const sessionOptions = {
+secret: "any string",
+resave: false,
+saveUninitialized: false,
+};
+app.use(
+session(sessionOptions)
+);
 app.use(express.json()); 
 
 UserRoutes(app);
 CourseRoutes(app);
 ModuleRoutes(app);
 AssignmentRoutes(app);
-
-
 Lab5(app)
 HelloRoutes(app)
 
